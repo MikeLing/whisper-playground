@@ -1,5 +1,3 @@
-from faster_whisper import WhisperModel
-from diart import OnlineSpeakerDiarization
 from aiohttp import web
 import socketio
 from client_manager import ClientManager
@@ -57,4 +55,4 @@ def handle_chunk(sid, chunk):
 
 
 if __name__ == "__main__":
-    web.run_app(app, port=8000)
+    web.run_app(app, port=8501)
